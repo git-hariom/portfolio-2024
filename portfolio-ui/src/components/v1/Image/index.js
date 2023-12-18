@@ -6,12 +6,12 @@ const Image = (props) => {
         height,
         width,
         url,
-        fit,
+        alt,
         ...restProps
     } = {...props};
 
     return (
-        <img src={url} height={height} width={width} {...restProps} />
+        <img src={url} height={height} width={width} alt={alt} {...restProps} />
     )
 }
 
@@ -19,7 +19,7 @@ Image.propTypes = {
     height: PropTypes.string,
     width: PropTypes.string,
     url: PropTypes.string,
-    fit: PropTypes.string,
+    alt: PropTypes.string,
     restProps: PropTypes.shape
 }
 
@@ -27,7 +27,7 @@ Image.defaultProps = {
     height: 40,
     width: 40,
     url: '',
-    fit: 'center',
+    alt: 'Not Found',
     restProps: {}
 }
 
