@@ -22,7 +22,7 @@ const LabelExamples = () => {
             <Label label="Label" variant="small-1" bold/>
             <Label label="Label" variant="small-2"/>
             <Label label="Label" variant="small-3"/>
-            <Label label="Label" customStyle={{
+            <Label label="Label" style={{
                 color: 'red',
                 fontSize: '42px',
                 fontWeight: 600
