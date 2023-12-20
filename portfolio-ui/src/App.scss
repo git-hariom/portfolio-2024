@@ -1,5 +1,13 @@
 @import url(./assets/index.scss);
 
 body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
     font-family: 'Poppins-Regular';
+}
+
+.app-wrapper {
+    height: 100%;
+    width: 100%;
 }

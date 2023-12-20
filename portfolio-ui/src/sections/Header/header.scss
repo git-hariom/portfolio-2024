@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.header-container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 48px;
+    padding-left: 16px;  
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: white;
+    &.hide {
+        display: none;
+    }
+}
+
+@media (min-width: $SCREEN_RES_TABLET) {
+
+}
+
+@media (min-width: $SCREEN_RES_SMALL_PC) {
+    .header-container {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 12px;
+        box-sizing: border-box;
+        padding-left: 12px;
+        .nav-items {
+            margin: 10px;
+        }
+        &.hide {
+            display: flex;
+        }
+    }   
+}
+
+@media (min-width: $SCREEN_RES_LARGE_PC) {
+    
+}
+
+@media (min-width: $SCREEN_RES_EXTRA_LARGE_PC) {
+  
+}

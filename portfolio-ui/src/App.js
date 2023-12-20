@@ -3,10 +3,11 @@ import NotFound from './components/v1/NotFound';
 import ImageExamples from './components/v1/examples/ImageExamples';
 import LabelExamples from './components/v1/examples/LabelExamples';
 import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-wrapper">
        <Routes>
         <Route path="dev">
           <Route path="examples">
@@ -16,7 +17,7 @@ function App() {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </div>
   );

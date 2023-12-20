@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+.homepage-wrapper {
+    height: 100%;
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        height: 100px;
+        align-items: center;
+        .hemberger-icon {
+            cursor: pointer;
+            z-index: 999;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+    }
+}
+
+@media (min-width: $SCREEN_RES_TABLET) {
+
+}
+
+@media (min-width: $SCREEN_RES_SMALL_PC) {
+    .hemberger-icon {
+        display: none;
+    }
+}
+
+@media (min-width: $SCREEN_RES_LARGE_PC) {
+    
+}
+
+@media (min-width: $SCREEN_RES_EXTRA_LARGE_PC) {
+  
+}
