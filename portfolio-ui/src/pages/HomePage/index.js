@@ -3,6 +3,7 @@ import Header from "../../sections/Header"
 import "./homePage.scss";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import Body from "../../sections/Body";
 
 const HomePage = (props) => {
     const [isShowHeader, setShowHeader] = useState(false);
@@ -18,6 +19,9 @@ const HomePage = (props) => {
                     { isShowHeader && <CloseRoundedIcon /> }
                 </div>
                 <Header isVisible={isShowHeader} />
+            </div>
+            <div className="body">
+                <Body />
             </div>
         </div>
     )

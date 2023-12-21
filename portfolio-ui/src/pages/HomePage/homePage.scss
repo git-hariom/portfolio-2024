@@ -16,6 +16,9 @@
             left: 12px;
         }
     }
+    .body {
+        flex: 1;
+    }
 }
 
 @media (min-width: $SCREEN_RES_TABLET) {

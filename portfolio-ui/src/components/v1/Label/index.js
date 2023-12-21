@@ -12,7 +12,7 @@ const Label = (props) => {
     } = { ...props };
 
     return (
-        <span className={`label-default ${LABEL_VARIANTS[variant]} ${bold ? 'label-bold' : ''}`} {...restProps}>{label}</span>
+        <span className={`${LABEL_VARIANTS[variant]} ${bold ? 'label-bold' : ''}`} {...restProps}>{label}</span>
     )
 }
 

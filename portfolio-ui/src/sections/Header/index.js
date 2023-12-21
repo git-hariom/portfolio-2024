@@ -15,7 +15,7 @@ const Header = (props) => {
             {
                 HeaderConfig?.navs?.map((nav) => (
                     <div className="nav-items">
-                        <Label key={nav?.id} variant={'small-1'} label={nav?.label} />
+                        <Label key={nav?.id} variant={'small-2'} label={nav?.label} />
                     </div>
                 ))
             }

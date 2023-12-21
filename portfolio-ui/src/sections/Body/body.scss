@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .image-container {
+        margin-top: 10%;
+        height: 100px;
+        width: 100px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 50%;
+    }
+    .name-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        color: white;
+        font-size: 20px;
+    }
+    .title-container {
+        color: black;
+        text-align: center;
+        font-size: 10px;
+    }
+    .desc-container {
+        width: 90%;
+        margin-top: 20%;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+
+@media (min-width: $SCREEN_RES_TABLET) {
+    .body-container {
+        .image-container {
+            margin-top: 10%;
+            height: 150px;
+            width: 150px;
+        }
+        .name-container {
+            margin-top: 2%;
+            font-size: 30px;
+        }
+        .title-container {
+            color: black;
+            text-align: center;
+            font-size: 15px;
+        }
+        .desc-container {
+            width: 90%;
+            font-size: 30px;
+            margin-top: 12%;
+        }
+    }
+}
+
+@media (min-width: $SCREEN_RES_SMALL_PC) {
+    .body-container {
+        .image-container {
+            margin-top: 10%;
+            height: 200px;
+            width: 200px;
+        }
+        .name-container {
+            font-size: 40px;
+        }
+        .desc-container {
+            width: 90%;
+            font-size: 40px;
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (min-width: $SCREEN_RES_LARGE_PC) {
+    .body-container {
+        .image-container {
+            margin-top: 5%;
+            height: 250px;
+            width: 250px;
+        }
+        .title-container {
+            color: black;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: $SCREEN_RES_EXTRA_LARGE_PC) {
+    .body-container {
+        .image-container {
+            height: 300px;
+            width: 300px;
+        }
+        .title-container {
+            color: black;
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+}
