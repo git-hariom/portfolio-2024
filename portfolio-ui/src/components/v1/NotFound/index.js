@@ -10,7 +10,7 @@ const NotFound = (props) => {
 
     return (
         <div className="not-found-container">
-            <img src={require("../../../assets/gifs/404.gif")} alt="this slowpoke moves"  width="100" />
+            <img src={require("../../../assets/gifs/404.gif")} alt="this slowpoke moves"  width="100" {...restProps} />
         </div>
     )
 }

@@ -15,6 +15,7 @@ const Header = (props) => {
             <a
               className="label-small-2"
               target="_blank"
+              rel="noreferrer"
               href={nav?.navigationURL}
               style={{
                 textDecoration: "none",
